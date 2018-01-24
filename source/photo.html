@@ -32,55 +32,74 @@
     </header>
 
     <main class="page-main">
-      <img class="paage-main__back-image" src="http://placehold.it/150x100" width="150" height="100" alt="Седона - город в аризоне">
-        <section class="page-main__media">
-          <div class="page-main__media-photo">
-            <h2 class="media__title">Фото и видео</h2>
-            <p class="media__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-          </div>
-          <section class="media-container container">
-            <div class="container-photo photo">
-              <img class="photo__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Неродные просторы">
-              <b class="photo__title">Неродные просторы</b>
-              <p class="photo_author">Автор фото: Борис</p>
-              <span class="photo__like-counter">1350</span>
+      <h1 class="visually-hidden">Седона - фото и видео</h1>
+        <img class="paage-main__back-image" src="http://placehold.it/150x100" width="150" height="100" alt="Седона - город в аризоне">
+          <section class="page-main__media">
+            <div class="page-main__media-photo">
+              <h2 class="media__title">Фото и видео</h2>
+              <p class="media__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
             </div>
-            <div class="container-photo photo">
-              <img class="photo__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Местная растительность">
-              <b class="photo__title">Местная растительность</b>
-              <p class="photo_author">Автор фото: Сергей</p>
-              <span class="photo__like-counter">143</span>
-            </div>
-            <div class="container-photo photo">
-              <img class="photo__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Дорога на север">
-              <b class="photo__title">Дорога на север</b>
-              <p class="photo_author">Автор фото: Петр</p>
-              <span class="photo__like-counter">96</span>
-            </div>
-            <div class="container-photo photo">
-              <img class="photo__photo" src="http://placehold.it/150x100" width="150" height="100" alt="Мост дьявола">
-              <b class="photo__title">Мост дьявола</b>
-              <p class="photo_author">Автор фото: Антон</p>
-              <span class="photo__like-counter">254</span>
-            </div>
+            <section class="media-container container">
+              <div class="container-photo photo">
+                <img class="photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Неродные просторы">
+                <b class="photo__title">Неродные просторы</b>
+                <p class="photo__author">Автор фото: Борис</p>
+                <a class="photo__btn-like" href="#">
+                  <span class="photo__like-counter">1350</span>
+                </a>
+              </div>
+              <div class="container-photo photo">
+                <img class="photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Местная растительность">
+                <b class="photo__title">Местная растительность</b>
+                <p class="photo__author">Автор фото: Сергей</p>
+                <a class="photo__btn-like" href="#">
+                  <span class="photo__like-counter">143</span>
+                </a>
+              </div>
+              <div class="container-photo photo">
+                <img class="photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Дорога на север">
+                <b class="photo__title">Дорога на север</b>
+                <p class="photo__author">Автор фото: Петр</p>
+                <a class="photo__btn-like" href="#">
+                  <span class="photo__like-counter">96</span>
+                </a>
+              </div>
+              <div class="container-photo photo">
+                <img class="photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Мост дьявола">
+                <b class="photo__title">Мост дьявола</b>
+                <p class="photo__author">Автор фото: Антон</p>
+                <a class="photo__btn-like" href="#">
+                  <span class="photo__like-counter">254</span>
+                </a>
+              </div>
+            </section>
           </section>
-        </section>
-        <section class="page-main__media">
-          <div class="page-main__media-video">
-            <h2 class="media__title">Все еще сомневаетесь?</h2>
-            <p class="media__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          </div>
-          <video class="media__video" width="320" height="200" controls="controls" poster="#">
-            <source src="#" type='video/ogg; codecs="theora, vorbis"'>
-            <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-            <source src="#" type='video/webm; codecs="vp8, vorbis"'>
-          </video>
-        </section>
+          <section class="page-main__media">
+            <div class="page-main__media-video">
+              <h2 class="media__title">Все еще сомневаетесь?</h2>
+              <p class="media__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            </div>
+            <video class="media__video video" width="320" height="200" poster="#">
+              <source src="#" type='video/ogg; codecs="theora, vorbis"'>
+              <source src="#" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+              <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+                <div class="video__control">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                </div>
+                <div class="video__buttons">
+                  <div class="video__replay"></div>
+                  <div class="video__subtitles"></div>
+                  <div class="video__fullscreen"></div>
+                </div>
+            </video>
+          </section>
     </main>
 
     <footer class="page-footer">
-      <h1 class="visually-hidden">Мы в соцсетях!</h1>
-        <h2 class="page-footer__hashtag">#visitsedona</h2>
+      <h2 class="visually-hidden">Мы в соцсетях!</h2>
+        <a class="page-footer__hashtag" href="#">#visitsedona</a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
