@@ -1,0 +1,36 @@
+[33mcommit 4b8ccb8e8267f4b88516cd67b6e9fdda3f46718e[m[33m ([m[1;36mHEAD -> [m[1;32mmodule2-task1[m[33m, [m[1;31morigin/module2-task1[m[33m)[m
+Author: Lazarev Denis <riddickgs@gmail.com>
+Date:   Mon Jan 22 22:19:11 2018 +0200
+
+    Добавляет модальные окна
+
+[33mcommit e7de082573e059206887ae4a132f3d4e5e00b920[m
+Author: Lazarev Denis <riddickgs@gmail.com>
+Date:   Mon Jan 22 01:13:21 2018 +0200
+
+    Добавляет разметку в form.html
+
+[33mcommit b2976c2dd5ebe4df2f3304019241201181e208f0[m
+Author: Lazarev Denis <riddickgs@gmail.com>
+Date:   Sun Jan 21 21:46:19 2018 +0200
+
+    Добавляет разметку в index.html
+
+[33mcommit 6e441b5d7acdb76752df1142d547ee6cccbde0d4[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31macademy/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: d0a6803 8478bcf
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Jan 21 18:08:42 2018 +0300
+
+    Merge pull request #1 from Lazarev-Denis/module1-task1
+
+[33mcommit 8478bcf55e9faaeb977a4ea3672e3bd3d4c38d87[m[33m ([m[1;31morigin/module1-task1[m[33m, [m[1;32mmodule1-task1[m[33m)[m
+Author: Lazarev Denis <riddickgs@gmail.com>
+Date:   Sat Jan 20 18:40:25 2018 +0200
+
+    Добавляет наставника
+
+[33mcommit d0a68037e6710f4b5a6d95840f91f04fb5191298[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Thu Jan 18 01:06:23 2018 +0300
+
+    :hatching_chick:
