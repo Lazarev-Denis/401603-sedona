@@ -1,7 +1,15 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff") format("woff"),
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff"),
+       url("../fonts/ptsansbold.woff2") format("woff2");
+}
+
 @import "normalize.less";
 @import "page-header.less";
 @import "main-intro.less";
-@import "main-content.less";
+@import "main-content__feature.less";
 @import "main-camp.less";
 @import "main-map.less";
 @import "page-main__back-image.less";
@@ -9,13 +17,10 @@
 @import "page-main__media.less";
 @import "page-footer.less";
 @import "popup.less";
+@import "variables";
 
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff") format("woff"),
-       url("../fonts/ptsans.woff2") format("woff2"),
-       url("../fonts/ptsansbold.woff") format("woff"),
-       url("../fonts/ptsansbold.woff2") format("woff2");
+body {
+  background: white;
 }
 
 /* Скрыть заголовки доступно */
@@ -34,8 +39,3 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-body {
-  background: white;
-}
-
