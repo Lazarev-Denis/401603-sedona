@@ -1,5 +1,8 @@
 @import "normalize.less";
 @import "font-face.less";
+@import "variables";
+@import "mixin.less";
+@import "global.less";
 @import "page-header.less";
 @import "main-intro.less";
 @import "main-content__feature.less";
@@ -9,25 +12,3 @@
 @import "page-main__media.less";
 @import "page-footer.less";
 @import "popup.less";
-@import "variables";
-
-body {
-  background: white;
-}
-
-/* Скрыть заголовки доступно */
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
