@@ -5,6 +5,12 @@
   margin: 0 auto;
 }
 
+.main-nav--mobile {
+  width: 320px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
+
 .main-nav__list {
   width: 280px;
   margin: auto;
@@ -49,16 +55,16 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    margin: 0;
-  }
-
-  .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
     width: 640px;
     margin: 0 auto;
+    outline: 1px solid green;
+  }
+
+  .page-header__menu {
+    display: flex;
+    justify-content: center;
+    width: 640px;
+    margin: 0 auto;
+    outline: 1px solid red;
   }
 }
