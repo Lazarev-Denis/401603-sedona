@@ -36,11 +36,30 @@ input[type="radio"].visually-hidden {
   outline: 1px solid red;
 }
 
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  height: 243px;
+  text-align: center;
+  background-color: #fefefe;
+}
+
 @media (min-width: @tablet-width) {
   .container {
     width: 768px;
     margin: 0 auto;
     outline: 1px solid green;
+  }
+
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    outline: 1px solid red;
   }
 }
 
@@ -48,6 +67,7 @@ input[type="radio"].visually-hidden {
   .container {
     width: 1280px;
     margin: 0 auto;
+    padding: 0 20px;
     outline: 1px solid orange;
   }
 }
