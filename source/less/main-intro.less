@@ -1,4 +1,4 @@
-.main-intro__block-pic {
+.main-intro__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,10 +12,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-intro__block-pic {
+  .main-intro__wrapper {
     width: 100%;
     height: 518px;
-    background: #d7e5f0 url("../img/back-desktop.jpg") no-repeat center;
+    background: #d7e5f0 url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover
   }
 
   .main-intro__logo {
@@ -23,5 +26,12 @@
     height: 350px;
     margin: 0 auto;
     margin-top: -6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-intro__wrapper {
+    width: 1200px;
+    background-position: center 25%;
   }
 }

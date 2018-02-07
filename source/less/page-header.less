@@ -3,17 +3,17 @@
   flex-direction: column;
 }
 
-.page-header__menu {
+.header-menu {
   display: flex;
   position: relative;
   justify-content: center;
 }
 
-.page-header-logo {
+.header-menu__logo-link {
   height: 56px;
 }
 
-.page-header__toggle--open {
+.header-menu__toggle {
   position: absolute;
   top: 17px;
   right: 20px;
@@ -27,15 +27,24 @@
   .page-header {
     display: flex;
     flex-direction: row;
+    outline: 1px solid red;
   }
 
-  .page-header__menu {
+  .header-menu {
     position: absolute;
     top: 0%;
     right: 44%;
   }
 
-  .page-header__toggle--open {
+  .page-header__toggle {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+.header-menu {
+    position: absolute;
+    top: 0%;
+    right: 50%;
   }
 }

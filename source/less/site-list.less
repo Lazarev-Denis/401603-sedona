@@ -5,13 +5,13 @@
   list-style: none;
 }
 
-.site-list__item a {
+.site-list__link {
   .font-bold-white;
   text-decoration: none;
 }
 
 @media (min-width: @tablet-width) {
-  .site-list__item a {
+  .site-list__link {
     .font-header-tablet;
     color: #000000;
   }
@@ -30,5 +30,23 @@
 
   .site-list__item:nth-child(4) {
     margin-left: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item:nth-child(1) {
+    margin-left: 70px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-left: 163px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 382px;
+  }
+
+  .site-list__item:nth-child(4) {
+    margin-left: 139px;
   }
 }
