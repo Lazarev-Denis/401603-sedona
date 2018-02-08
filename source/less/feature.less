@@ -1,17 +1,42 @@
 .feature__wrapper {
   display: flex;
   flex-direction: column;
-  height: 190px;
+  height: 1840px;
   margin: 0 auto;
   text-align: center;
   background-color: @blue-light;
+  outline: 4px solid red;
 }
 
-.feature__block-image--triangle {
+.feature__block-image {
   display: flex;
   flex-direction: column;
-  height: 210px;
-  background: @blue-light url("../img/bg-triangle.svg") no-repeat top;
+  height: 470px;
+  padding-top: 40px;
+}
+
+.feature__image {
+  padding-top: 40px;
+}
+
+.feature__block-list {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  height: 415px;
+  margin-top: -36px;
+  background-color: #ffffff;
+  outline: 2px solid black;
+}
+
+.feature__list {
+  padding-bottom: 7px;
+}
+
+.feature__item {
+  padding-top: 15px;
+  padding-left: 30px;
+  list-style: none;
 }
 
 .feature__block {
@@ -45,17 +70,6 @@
   background-color: #ffffff;
 }
 
-.feature__list {
-  display: flex;
-  flex-direction: column;
-}
-
-.feature__item {
-  padding-top: 15px;
-  padding-left: 30px;
-  list-style: none;
-}
-
 .feature__item-title {
   .font-bold-medium();
 }
@@ -63,18 +77,4 @@
 .feature__item-text {
   width: 230px;
   .font-text-wb();
-}
-
-.feature__item-title {
-  .font-bold-medium();
-}
-
-.feature__item-text {
-  .font-text-wb();
-}
-
-.feature__title--color,
-.feature__number--color,
-.feature__text--color {
-  color: #000000;
 }
