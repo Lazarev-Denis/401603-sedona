@@ -33,10 +33,9 @@ input[type="radio"].visually-hidden {
 .container {
   width: 320px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
-.page-footer {
+.page-footer__wrapper {
   display: flex;
   flex-direction: column;
   height: 243px;
@@ -48,7 +47,13 @@ input[type="radio"].visually-hidden {
   .container {
     width: 768px;
     margin: 0 auto;
-    outline: 1px solid green;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 120px;
+    align-items: center;
   }
 }
 
@@ -57,7 +62,10 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-    outline: 1px solid orange;
     background-color: #f2f2f2;
+  }
+
+  .page-footer__wrapper {
+    justify-content: space-between;
   }
 }

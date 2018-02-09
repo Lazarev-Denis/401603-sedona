@@ -1,15 +1,28 @@
 .copyright__wrapper {
   display: flex;
   justify-content: center;
-  text-align: center;
-  margin: 0 auto;
 }
 
 .copyright__link {
-  margin: 0 auto;
-  padding: 0;
-  padding-right: 10px;
+  padding-right: 42px;
+  padding-top: 5px;
   .font-text();
   text-decoration: none;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__wrapper {
+    width: 33%;
+  }
+
+  .copyright__link {
+    padding-left: 188px;
+  }
 }

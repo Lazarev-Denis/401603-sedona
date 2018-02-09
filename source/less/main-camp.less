@@ -11,8 +11,9 @@
 }
 
 .main-camp__text {
-  width: 280px;
+  /*width: 280px;
   margin-left: 20px;
+  margin-top: 0px;*/
   margin-top: 0px;
   .font-text-normal();
 }
@@ -26,4 +27,36 @@
   .font-bold-big();
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .main-camp__wrapper {
+    height: 318px;
+    margin: auto;
+
+  }
+
+  .main-camp__title {
+    padding-top: 25px;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  .main-camp__text {
+    width: 460px;
+    margin: 0 auto;
+    margin-bottom: 43px;
+  }
+
+  .main-camp__button {
+    width: 458px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-camp__text {
+    margin-bottom: 48px;
+  }
 }
