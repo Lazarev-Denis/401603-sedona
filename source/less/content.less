@@ -1,20 +1,24 @@
 .content__wrapper {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  height: 200px;
-  margin: auto;
-  padding-top: 21px;
+  justify-content: flex-start;
+  width: 320px;
+  height: 221px;
   background-color: #ffffff;
 }
 
 .content__slogan {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 40px;
   text-align: center;
   .font-bold-medium();
 }
 
 .content__text {
-  margin-top: 9px;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 25px;
   text-align: center;
   .font-text();
 }
@@ -22,18 +26,20 @@
 @media (min-width: @tablet-width) {
   .content__wrapper {
     width: 100%;
-    justify-content: center;
-    height: 185px;
+    height: 206px;
+    justify-content: flex-start;
   }
 
   .content__slogan {
     width: 500px;
     margin: 0 auto;
-    margin-top: -9px;
+    padding-top: 50px;
     .font-bold-big();
   }
 
   .content__text {
-    padding-top: 18px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
   }
 }
