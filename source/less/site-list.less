@@ -1,0 +1,27 @@
+.site-list__item {
+  padding: 8px 0;
+}
+
+.site-list__link {
+  .font-bold-white();
+  text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: 20%;
+  }
+
+  .site-list__link {
+    .font-header-tablet();
+    color: #000000;
+    text-align: center;
+  }
+}

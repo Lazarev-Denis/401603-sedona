@@ -1,0 +1,145 @@
+.photo__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__container {
+  display: flex;
+  flex-direction: column;
+  height: 416px;
+}
+
+.photo__info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 112px;
+}
+
+.photo__info-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__image {
+  padding-top: 21px;
+}
+
+.photo__title {
+  .font-text-big();
+}
+
+.photo__author {
+  margin-top: -15px;
+  .font-text-normal();
+  text-transform: none;
+}
+
+.photo__btn {
+  margin-top: -9px;
+  padding-left: 15px;
+  .font-text-big();
+  color: #000000;
+  text-decoration: none;
+}
+
+.photo__btn-like {
+  width: 70px;
+  height: 30px;
+  .font-text-big();
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+
+  .photo__container {
+    width: 324px;
+    height: 347px;
+  }
+
+  .photo__container--big {
+    width: 648px;
+    height: 480px;
+  }
+
+  .photo__info {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+  }
+
+  .photo__info-name {
+    width: 250px;
+    height: 80px;
+  }
+
+  .photo__btn {
+    margin-top: 25px;
+    margin-right: 18px;
+  }
+
+  .photo__image {
+    width: 324px;
+    height: 267px;
+    padding: 0;
+  }
+
+  .photo__image--big {
+    width: 648px;
+    height: 400px;
+    padding: 0;
+  }
+
+  .photo__title {
+    padding-top: 2px;
+    padding-left: 20px;
+    .font-text-big();
+  }
+
+  .photo__author {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__wrapper {
+    width: 1200px;
+  }
+
+  .photo__container {
+    width: 400px;
+    height: 268px;
+  }
+
+  .photo__container--big {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photo__image {
+    width: 400px;
+    height: 268px;
+  }
+
+  .photo__image--big {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .photo__info {
+    margin-top: -80px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo__title,
+  .photo__author,
+  .photo__btn-like {
+    color: #ffffff;
+  }
+}

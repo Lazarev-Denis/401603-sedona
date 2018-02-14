@@ -1,0 +1,41 @@
+.review-info__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.review-info__title {
+  padding-top: 22px;
+  .font-bold-medium();
+}
+
+.review-info__text {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  .font-text-normal();
+}
+
+@media (min-width: @tablet-width) {
+  .review-info__title {
+    padding: 0;
+    padding-top: 50px;
+    .font-media-tablet();
+  }
+
+  .review-info__text {
+    padding: 0 165px 17px 165px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review-info__title {
+    padding-top: 85px;
+  }
+
+  .review-info__text {
+    padding: 0 380px 17px 380px;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,37 @@
+.copyright__wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.copyright__link {
+  padding-right: 40px;
+  padding-top: 2px;
+  .font-text();
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    margin-top: -50px;
+  }
+
+  .copyright__link {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    margin-top: -10px;
+  }
+
+  .copyright__wrapper {
+    width: 33.33%;
+  }
+
+  .copyright__link {
+    padding-left: 188px;
+  }
+}

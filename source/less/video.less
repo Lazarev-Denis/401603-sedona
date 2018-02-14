@@ -1,0 +1,35 @@
+.video__wrapper {
+  margin-top: -4px;
+}
+
+.video__info {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 10px 0 10px;
+}
+
+.video__title {
+  .font-bold-medium();
+}
+
+.video__text {
+  padding: 0 15px;
+  .font-text-normal();
+}
+
+@media (min-width: @tablet-width) {
+  .video__info {
+    width: 648px;
+    margin: 0 auto;
+    padding: 45px 0 18px;
+  }
+
+  .video__title {
+    .font-media-tablet();
+  }
+
+  .video__text {
+    margin-top: 4px;
+    padding: 0 110px;
+  }
+}

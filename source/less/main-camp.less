@@ -1,15 +1,67 @@
+.main-camp__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 283px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
 .main-camp__title {
-  .font-bold-big;
+  padding-top: 7px;
+  .font-bold-big();
 }
 
 .main-camp__text {
-  .font-text-wb;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: -2px;
+  padding-bottom: 15px;
+  .font-text-normal();
 }
 
 .main-camp__button {
-  padding: 0px 47px;
+  width: 280px;
+  padding: 16px 0;
+  margin-top: 19px;
+  margin-left: 20px;
   background-color: @blue-light;
-  .font-bold-big;
+  .font-bold-big();
   text-decoration: none;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .main-camp__wrapper {
+    height: 318px;
+    margin: 0 auto;
+  }
+
+  .main-camp__title {
+    padding-top: 25px;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
+  .main-camp__text {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+  .main-camp__button {
+    width: 458px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-camp__wrapper {
+    height: 331px;
+    margin: 0 auto;
+  }
+
+  .main-camp__text {
+    margin-bottom: 33px;
+  }
 }
