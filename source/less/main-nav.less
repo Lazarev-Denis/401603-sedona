@@ -1,6 +1,46 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__menu {
+  position: relative;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: -223px;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  background-image: url(../img/icon-cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav__toggle--opened {
+  position: absolute;
+  top: 15px;
+  right: 19px;
+  z-index: 2;
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  background-image: url(../img/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .main-nav__wrapper {
   text-align: center;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .main-nav__list {
@@ -14,6 +54,14 @@
   .main-nav__wrapper {
     width: 768px;
     text-align: center;
+  }
+
+  .main-nav__menu {
+    position: static;
+  }
+
+  .main-nav__toggle--opened {
+    display: none;
   }
 
   .main-nav__list {
