@@ -28,7 +28,32 @@
   .font-bold-big();
   text-decoration: none;
   color: #ffffff;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+  }
 }
+
+/*.main-camp__button--disabled {
+  background-color: #e5e5e5;
+  color: #f1f1f1;
+  cursor: default;
+  pointer-events: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+    color: #f1f1f1;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+*/
+
 
 @media (min-width: @tablet-width) {
   .main-camp__wrapper {

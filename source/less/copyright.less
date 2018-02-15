@@ -5,16 +5,26 @@
 }
 
 .copyright__link {
-  padding-right: 40px;
+  padding-right: 15px;
   padding-top: 2px;
   .font-text();
   text-decoration: none;
   color: #000000;
 }
 
+.copyright__link-icon {
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
-    margin-top: -50px;
+    padding: 0;
   }
 
   .copyright__link {
@@ -23,10 +33,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer__wrapper {
-    margin-top: -10px;
-  }
-
   .copyright__wrapper {
     width: 33.33%;
   }
