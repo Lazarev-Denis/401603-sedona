@@ -15,6 +15,7 @@
 .site-list a[href] {
   display: block;
   padding: 7px 0;
+
   &:hover {
     background-color: #669ec0;
     border-top-color: #669ec0;
@@ -47,27 +48,26 @@
   }
 
   .site-list a[href] {
+    &:hover {
+      color: #81b3d2;
+      background-color: transparent;
+    }
 
-  &:hover {
-    color: #81b3d2;
-    background-color: transparent;
-  }
-
-  &:active {
-    color: #b2b2b2;
-    background-color: transparent;
-  }
+    &:active {
+      color: #b2b2b2;
+      background-color: transparent;
+    }
   }
 
   .site-list__item--active a {
     color: #766357;
 
-  &:hover {
-    color: #766357;
-  }
+    &:hover {
+      color: #766357;
+    }
 
-  &:active {
-    color: #d6d0cc;
-  }
+    &:active {
+      color: #d6d0cc;
+    }
   }
 }
