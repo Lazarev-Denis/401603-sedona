@@ -16,10 +16,24 @@
   width: 47px;
   height: 48px;
   background-color: @blue-light;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .social__link {
   text-decoration: none;
+  fill: #ffffff;
+
+  &:active {
+    fill: #88b6d1;
+  }
 }
 
 @media (min-width: @desktop-width) {

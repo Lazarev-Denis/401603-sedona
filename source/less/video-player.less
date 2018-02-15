@@ -6,6 +6,7 @@
 }
 
 .video-player__player {
+  position: relative;
   width: 320px;
   height: 200px;
 }
@@ -33,37 +34,42 @@
 
 @media (min-width: @tablet-width) {
   .video-player__wrapper {
-    width: 648px;
     margin: 0 auto;
-    padding-top: 43px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 
   .video-player__player {
+    position: relative;
     width: 648px;
     height: 500px;
-    margin: 0 auto;
+    z-index: 0;
   }
 
   .video-player__control {
     width: 648px;
     height: 92px;
     margin: 0 auto;
+    top: -92px;
+    left: 0;
   }
 
   .video-player__scale-block {
+    position: absolute;
     width: 648px;
     height: 92px;
-    position: relative;
     background: rgba(0, 0, 0, 0.3);
     top: -92px;
+    left: 0;
+    z-index: 1;
   }
 
   .video-player__scale-buttons {
+    position: absolute;
     width: 648px;
     height: 92px;
-    position: relative;
     background-color: rgba(255, 255, 255, 0);
+    z-index: 2;
   }
 }
 
