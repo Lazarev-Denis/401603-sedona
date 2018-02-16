@@ -1,5 +1,7 @@
 .map__wrapper {
   position: relative;
+  display: flex;
+  width: 320px;
   height: 350px;
   margin-top: 5px;
   background: url("../img/bg-map-mobile@1x.jpg");
@@ -27,6 +29,8 @@
 
 @media (min-width: @tablet-width) {
   .map__wrapper {
+    width: 768px;
+    height: 350px;
     margin: 0 auto;
     background: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -46,6 +50,7 @@
 
 @media (min-width: @desktop-width) {
   .map__wrapper {
+    width: 1200px;
     margin: 0 auto;
     background: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;

@@ -1,25 +1,29 @@
 .copyright__wrapper {
   display: flex;
-  justify-content: center;
-  background-color: #ffffff;
 }
 
 .copyright__link {
-  padding-right: 15px;
-  padding-top: 2px;
+  display: flex;
+  padding-right: 0;
+  margin-top: 20px;
+  margin: 0 auto;
   .font-text();
   text-decoration: none;
   color: #000000;
-}
 
-.copyright__link-icon {
   &:hover {
     fill: #81b3d2;
+    color: #81b3d2;
   }
 
   &:active {
     fill: #b2b2b2;
+    color: #b2b2b2;
   }
+}
+
+.copyright__link-text {
+  padding-right: 10px;
 }
 
 @media (min-width: @tablet-width) {

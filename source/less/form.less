@@ -34,7 +34,22 @@
   width: 100%;
   padding: 15px 20px;
   box-sizing: border-box;
+  background-color: #f2f2f2;
+  border: none;
   .font-bold-medium-upnone-input();
+  outline: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+    outline: none;
+  }
+
+  &:focus {
+    padding: 11px 16px;
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+    outline: none;
+  }
 }
 
 .form__label--patronymic {
@@ -44,6 +59,41 @@
 .form__box-input--contact {
   flex-direction: column;
   padding: 0;
+}
+
+.form__input--contact {
+  width: 100%;
+}
+
+.form__input-before {
+  position: relative;
+  width: 100%;
+}
+
+.form__input--contact-tel::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 56px;
+  top: 0;
+  right: 0;
+  background-color: #e6e6e6;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__input--contact-email::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 56px;
+  top: 0;
+  right: 0;
+  background-color: #e6e6e6;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form__box-input--email {
@@ -103,6 +153,7 @@
   width: 280px;
   height: 130px;
   padding: 15px;
+  resize: none;
   .font-bold-medium-upnone-input();
 }
 
@@ -116,6 +167,23 @@
   background-color: @blue-light;
   .font-bold-medium();
   color: #ffffff;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #7aadcb;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #f8f8f8;
+    cursor: default;
+  }
 }
 
 .form__chek {
@@ -271,6 +339,10 @@
   .form__title--contact {
     width: 960px;
     padding: 30px 0 85px 0;
+  }
+
+  .form__input--contact-tel::before {
+    margin-right: 18px;
   }
 
   .form__label--contact-hide {
