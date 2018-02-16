@@ -38,6 +38,7 @@
 }
 
 .main-intro__wrapper--photo {
+  position: relative;
   display: flex;
   justify-content: center;
   height: 158px;
@@ -51,6 +52,19 @@
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 640px auto;
   }
+}
+
+.main-intro__wrapper--photo::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 26px;
+  left: 0;
+  bottom: 0;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
 }
 
 .main-intro__logo--photo {
@@ -106,6 +120,19 @@
   .main-intro__logo--photo {
     width: 458px;
   }
+
+  .main-intro__wrapper--photo::before {
+    content: "";
+    position: absolute;
+    width: 768px;
+    height: 57px;
+    left: 0;
+    bottom: 0;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -134,6 +161,11 @@
   }
 
   .main-intro__wrapper::before {
+    width: 1200px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
+
+  .main-intro__wrapper--photo::before {
     width: 1200px;
     background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
