@@ -90,6 +90,7 @@
   height: 56px;
   top: 0;
   right: 0;
+  margin-right: 2px;
   background-color: #e6e6e6;
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
@@ -128,6 +129,7 @@
 .form-radio__input + label {
   position: relative;
   padding: 18px 10px 10px 76px;
+  cursor: pointer;
 }
 
 .form-radio__input + label::before {
@@ -139,6 +141,15 @@
   left: 0;
   top: 5px;
   background-color: #f2f2f2;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
 }
 
 .form-radio__input:checked + label::after {
@@ -151,6 +162,11 @@
   background-color: #000000;
   left: 17px;
   top: 21px;
+  cursor: pointer;
+
+  &:active {
+    background-color: #a4a4a4;
+  }
 }
 
 .form-checkbox__input {
@@ -160,6 +176,7 @@
 .form-checkbox__input + label {
   position: relative;
   padding: 19px 5px 10px 80px;
+  cursor: pointer;
 }
 
 .form-checkbox__input + label::before {
@@ -169,7 +186,17 @@
   position: absolute;
   left: 0;
   top: 4px;
+  border-radius: 7px;
   background-color: #f2f2f2;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
 }
 
 .form-checkbox__input:checked + label::after {
@@ -182,6 +209,11 @@
   background-position: center;
   left: 18px;
   top: 21px;
+  cursor: pointer;
+
+  &:active {
+    background-color: #a4a4a4;
+  }
 }
 
 .form-radio__label {
