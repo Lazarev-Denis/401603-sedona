@@ -9,6 +9,12 @@
 .feature__block-image {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.feature__image {
+  width: 100%;
+  object-fit: cover;
 }
 
 .feature__block-image--triangle {
@@ -49,10 +55,6 @@
   padding-bottom: 40px;
 }
 
-.feature__image {
-  height: 260px;
-}
-
 .feature__block-list {
   display: flex;
   align-items: center;
@@ -69,14 +71,14 @@
 .feature__item--house::before {
   content: "";
   position: absolute;
-  left: -20px;
+  left: -19px;
   top: 2px;
-  width: 40px;
-  height: 40px;
+  width: 39px;
+  height: 39px;
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
   background-position: center;
-  outline: 1px solid red;
+  background-size: contain;
 }
 
 .feature__item--gift {
@@ -86,14 +88,14 @@
 .feature__item--gift::before {
   content: "";
   position: absolute;
-  left: -20px;
+  left: -18px;
   top: 2px;
-  width: 40px;
-  height: 40px;
+  width: 39px;
+  height: 39px;
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: center;
-  outline: 1px solid red;
+  background-size: contain;
 }
 
 .feature__item--food {
@@ -104,13 +106,13 @@
   content: "";
   position: absolute;
   left: -20px;
-  top: 2px;
-  width: 40px;
-  height: 40px;
+  top: 6px;
+  width: 39px;
+  height: 39px;
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: center;
-  outline: 1px solid red;
+  background-size: contain;
 }
 
 .feature__list {
@@ -137,6 +139,7 @@
 .feature__block-wrapper {
   display: flex;
   flex-direction: column;
+  margin-top: -4px;
 }
 
 .feature__block {
@@ -168,9 +171,15 @@
 @media (min-width: @tablet-width) {
   .feature__block-image {
     flex-direction: row;
+    width: 100%;
+    height: auto;
     margin: 0;
     margin-top: 0;
     padding: 0;
+  }
+
+  .feature__block-img {
+    width: 66.66%;
     height: 256px;
   }
 
@@ -208,11 +217,6 @@
     top: 57px;
     width: 75px;
     height: 75px;
-  }
-
-  .feature__image {
-    width: 66.66%;
-    flex-grow: 1;
   }
 
   .feature__title {

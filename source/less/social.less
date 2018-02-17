@@ -9,35 +9,39 @@
   list-style: none;
 }
 
-.social__item {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 47px;
   height: 48px;
+  text-decoration: none;
   background-color: @blue-light;
   cursor: pointer;
+  fill: #ffffff;
 
   &:hover {
     background-color: #669ec0;
   }
 
   &:active {
+    fill: #88b6d1;
     background-color: #5496bd;
   }
 }
 
-.social__link {
-  text-decoration: none;
-  fill: #ffffff;
-
-  &:active {
-    fill: #88b6d1;
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin-left: -10px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .social-wrapper {
     width: 33%;
+  }
+
+  .social__list {
+    margin-left: -1px;
   }
 }

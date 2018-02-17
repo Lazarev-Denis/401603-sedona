@@ -36,5 +36,9 @@
   ],
   "engines": {
     "node": "8.9"
+  },
+  "dependencies": {
+    "object-fit": "^0.4.3",
+    "object-fit-images": "^3.2.3"
   }
 }

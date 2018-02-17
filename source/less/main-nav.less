@@ -1,9 +1,12 @@
 .main-nav {
   position: relative;
+  z-index: 1;
 }
 
 .main-nav__menu {
   position: relative;
+  height: 56px;
+  background-color: #ffffff;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -86,5 +89,10 @@
     height: 56px;
     .font-header-tablet();
     background-color: #ffffff;
+  }
+
+  .main-nav__logo {
+    width: 186px;
+    height: 96px;
   }
 }
