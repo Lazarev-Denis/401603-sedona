@@ -52,16 +52,17 @@
   text-transform: none;
 }
 
+.photo__btn {
+  margin-right: auto;
+  margin-top: -5px;
+}
+
 .photo__btn-like {
   position: relative;
-  text-align: left;
-  width: 100%;
   padding-left: 35px;
-  margin-top: -7px;
   .font-text-big();
   background-color: transparent;
   border: none;
-  outline: 1px solid black;
 }
 
 .photo__btn-like::after {
@@ -69,7 +70,7 @@
   width: 25px;
   height: 25px;
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
@@ -106,24 +107,18 @@
 
   .photo__info {
     flex-direction: row;
-    justify-content: space-between;
-    outline: 3px solid red;
     padding: 0;
+    align-items: center;
   }
 
   .photo__info-name {
     padding: 0;
-    outline: 1px solid green;
   }
 
   .photo__btn {
-    margin-top: 22px;
-    padding: 0;
-  }
-
-  .photo__btn-like {
-    padding: 5px 50px 0 30px;
-    width: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 20px;
   }
 
   .photo__image {
