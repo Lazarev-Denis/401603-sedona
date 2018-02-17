@@ -81,7 +81,7 @@
                 </li>
                 <li class="feature__item feature__item--gift">
                   <b class="feature__item-title">Сувениры</b>
-                  <p class="feature__item-text feature__item-text--gift">Не только китайского, но и местного производства!</p>
+                  <p class="feature__item-text feature__item-text--gift">Не только китайского, <br class="tablet-hidden"> но и местного производства!</p>
                 </li>
                 <li class="feature__item feature__item--food">
                   <b class="feature__item-title">Еда</b>
@@ -91,9 +91,9 @@
             </div>
             <div class="feature__block-image">
               <div class="feature__block-info feature__block-info--left">
-                <h3 class="feature__title">&nbsp;&nbsp;Там есть&nbsp;&nbsp; мост дьявола</h3>
+                <h3 class="feature__title">Там есть<br class="mobile-hidden"> мост дьявола</h3>
                 <p class="feature__number">&ndash; №2 &ndash;</p>
-                <p class="feature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно!</p>
+                <p class="feature__text">Да, по нему можно пройти!<br class="tablet-hidden"> Если вы осмелитесь, конечно!</p>
               </div>
               <div class="feature__block-img">
                 <picture>
@@ -194,6 +194,14 @@
       </footer>
 
     </div>
+
+  <script>
+  objectFit.polyfill({
+    selector: 'img', // this can be any CSS selector
+    fittype: 'cover', // either contain, cover, fill or none
+    disableCrossDomain: 'true' // either 'true' or 'false' to not parse external CSS files.
+  });
+  </script>
 
   </body>
 
