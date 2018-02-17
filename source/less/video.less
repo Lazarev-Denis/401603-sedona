@@ -2,6 +2,21 @@
   margin-top: -4px;
 }
 
+.video__border {
+  width: 100%;
+  position: relative;
+}
+
+.video__info::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background-color: #e5e5e5;
+}
+
 .video__info {
   display: flex;
   flex-direction: column;
