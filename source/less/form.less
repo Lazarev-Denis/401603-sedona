@@ -154,6 +154,14 @@
   cursor: pointer;
 }
 
+.form-radio__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.form-radio__label:active::before {
+  background-color: #d5d5d5;
+}
+
 .form-radio__input + label::before {
   content: "";
   width: 55px;
@@ -164,14 +172,6 @@
   top: 5px;
   background-color: #f2f2f2;
   cursor: pointer;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: #d5d5d5;
-  }
 }
 
 .form-radio__input:checked + label::after {
@@ -185,10 +185,6 @@
   left: 17px;
   top: 21px;
   cursor: pointer;
-
-  &:active {
-    background-color: #a4a4a4;
-  }
 }
 
 .form-checkbox__input {
@@ -201,6 +197,14 @@
   cursor: pointer;
 }
 
+.form-checkbox__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.form-checkbox__label:active::before {
+  background-color: #d5d5d5;
+}
+
 .form-checkbox__input + label::before {
   content: "";
   width: 55px;
@@ -211,14 +215,6 @@
   border-radius: 7px;
   background-color: #f2f2f2;
   cursor: pointer;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: #d5d5d5;
-  }
 }
 
 .form-checkbox__input:checked + label::after {
@@ -232,10 +228,6 @@
   left: 18px;
   top: 21px;
   cursor: pointer;
-
-  &:active {
-    background-color: #a4a4a4;
-  }
 }
 
 .form-radio__label {
