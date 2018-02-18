@@ -14,6 +14,28 @@
   margin: 0 auto;
 }
 
+.form__box--name,
+.form__box--contact,
+.form__box--radio,
+.form__box--checkbox,
+.form__box--textarea {
+  position: relative;
+}
+
+.form__box-title--name::after,
+.form__box-title--contact::after,
+.form__box-title--radio::after,
+.form__box-title--checkbox::after,
+.form__box-title--textarea::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: 0;
+  left: -20px;
+  background-color: #e5e5e5;
+}
+
 .form__box-title {
   text-align: center;
   .font-bold-medium();
@@ -108,6 +130,7 @@
 }
 
 .form__label--email {
+  width: 223px;
   padding-top: 10px;
 }
 
@@ -132,6 +155,14 @@
   cursor: pointer;
 }
 
+.form-radio__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.form-radio__label:active::before {
+  background-color: #d5d5d5;
+}
+
 .form-radio__input + label::before {
   content: "";
   width: 55px;
@@ -142,14 +173,6 @@
   top: 5px;
   background-color: #f2f2f2;
   cursor: pointer;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: #d5d5d5;
-  }
 }
 
 .form-radio__input:checked + label::after {
@@ -163,10 +186,6 @@
   left: 17px;
   top: 21px;
   cursor: pointer;
-
-  &:active {
-    background-color: #a4a4a4;
-  }
 }
 
 .form-checkbox__input {
@@ -179,6 +198,14 @@
   cursor: pointer;
 }
 
+.form-checkbox__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.form-checkbox__label:active::before {
+  background-color: #d5d5d5;
+}
+
 .form-checkbox__input + label::before {
   content: "";
   width: 55px;
@@ -189,14 +216,6 @@
   border-radius: 7px;
   background-color: #f2f2f2;
   cursor: pointer;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: #d5d5d5;
-  }
 }
 
 .form-checkbox__input:checked + label::after {
@@ -210,10 +229,6 @@
   left: 18px;
   top: 21px;
   cursor: pointer;
-
-  &:active {
-    background-color: #a4a4a4;
-  }
 }
 
 .form-radio__label {
@@ -230,12 +245,17 @@
   padding: 0 0 0 24px;
 }
 
+.form__title--textarea {
+  text-align: center;
+  margin-top: 11px;
+}
+
 .form-textarea__input {
   width: 280px;
   height: 130px;
-  padding: 15px;
+  padding: 12px 12px 12px 18px;
   resize: none;
-  .font-bold-medium-upnone-input();
+  .font-bold-medium-upnone();
 }
 
 .form__box--button {
@@ -244,9 +264,10 @@
 }
 
 .form__button {
-  padding: 16px 0 16px 0;
+  padding: 17px 0 16px 0;
+  margin-top: 2px;
   background-color: @blue-light;
-  .font-bold-medium();
+  .font-bold-big();
   color: #ffffff;
   border: none;
 
@@ -277,6 +298,39 @@
     flex-wrap: wrap;
     width: 648px;
     padding: 0 60px;
+  }
+
+  .form__box--name,
+  .form__box--radio,
+  .form__box--textarea {
+    position: static;
+  }
+
+  .form__box--contact,
+  .form__box--checkbox {
+    position: relative;
+  }
+
+  .form__box-title--contact::after,
+  .form__box-title--checkbox::after {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    top: 46px;
+    left: 0;
+    background-color: #e5e5e5;
+  }
+
+  .form__box-title--contact::before,
+  .form__box-title--checkbox::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    top: 46px;
+    right: 0;
+    background-color: #e5e5e5;
   }
 
   .form__box--radio {
@@ -324,6 +378,7 @@
     flex-wrap: wrap;
     padding: 0 30px;
     padding-bottom: 25px;
+    align-items: flex-end;
   }
 
   .form__box-title--name {
@@ -343,6 +398,7 @@
 
   .form__box-input--checkbox:nth-child(5) {
     order: 2;
+    margin-top: 13px;
   }
 
   .form__title--checkbox {
@@ -390,6 +446,30 @@
   .form__wrapper {
     width: 960px;
     padding: 0 120px;
+  }
+
+  .form__box-title--contact::before {
+    width: 280px;
+    top: 43px;
+    right: 0;
+  }
+
+  .form__box-title--checkbox::before {
+    width: 280px;
+    top: 72px;
+    right: 0;
+  }
+
+  .form__box-title--contact::after {
+    width: 280px;
+    top: 43px;
+    left: -1px;
+  }
+
+  .form__box-title--checkbox::after {
+    width: 280px;
+    top: 72px;
+    left: -1px;
   }
 
   .form__box--radio {
@@ -468,6 +548,7 @@
     width: 960px;
     justify-content: space-between;
     padding: 0;
+    align-items: flex-end;
   }
 
   .form__box-title--checkbox {
@@ -488,6 +569,7 @@
 
   .form__box-input--checkbox:nth-child(3) {
     padding: 0;
+    margin-top: 18px;
   }
 
   .form__box-input--checkbox:nth-child(5) {
