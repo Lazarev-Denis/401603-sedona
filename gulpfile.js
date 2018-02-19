@@ -121,7 +121,7 @@ gulp.task("build", function (done) {
 
 // LIVE SERVER
 
-gulp.task("serve", function() {
+gulp.task("serve" , function() {
   server.init({
     server: "build/"
   });
