@@ -121,11 +121,11 @@ gulp.task("build", function (done) {
 
 // LIVE SERVER
 
-gulp.task("serve", function() {
+gulp.task("serve" ["style"], function() {
   server.init({
     server: "build/"
   });
 
-  gulp.watch("source/less/**/*.less", ["style"]).on("change", server.reload);
+  gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
