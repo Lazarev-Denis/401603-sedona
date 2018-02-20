@@ -28,7 +28,8 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 // IMAGES
@@ -40,7 +41,7 @@ gulp.task("images", function () {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
  ]))
- .pipe(gulp.dest("source/img"));
+ .pipe(gulp.dest("build/img"));
 });
 
 // WEBP
@@ -48,7 +49,7 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("source/img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 // SVG SPRITE
@@ -123,9 +124,13 @@ gulp.task("build", function (done) {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build/"
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
   });
 
-  gulp.watch("source/less/**/*.less", ["style"]).on("change", server.reload);
+  gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
