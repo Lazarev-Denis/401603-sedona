@@ -53,7 +53,7 @@
 
           <section class="review">
             <div class="review__wrapper">
-              <h2 class="review__title">Оставьте свой отзыв</h2>
+              <h2 class="review__title">Оставьте cвой отзыв</h2>
               <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посеценных вами достопримечательностях</p>
             </div>
           </section>
@@ -67,15 +67,15 @@
                     </div>
                     <div class="form__box-input form__box-input--name">
                       <label class="form__label form__label--name" for="name">Имя*:</label>
-                      <input class="form__input form__input-name" type="text" name="name" id="name" placeholder="Петр">
+                      <input class="form__input form__input-name" type="text" name="name" id="name" placeholder="Петр" required>
                     </div>
                     <div class="form__box-input form__box-input--name">
                       <label class="form__label form__label--surname" for="surname">Фамилия*:</label>
-                      <input class="form__input form__input-name" type="text" name="surname" id="surname" placeholder="Иванов">
+                      <input class="form__input form__input-name" type="text" name="surname" id="surname" placeholder="Иванов" required>
                     </div>
                     <div class="form__box-input form__box-input--name">
                       <label class="form__label form__label--patronymic" for="patronymic">Отчество:</label>
-                      <input class="form__input form__input-name" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+                      <input class="form__input form__input-name" type="text" name="patronymic" id="patronymic" placeholder="Александрович" required>
                     </div>
                   </div>
                   <div class="form__box form__box--contact">
@@ -86,14 +86,14 @@
                       <div class="form__box-input form__box-input--contact">
                         <label class="form__label form__label--contact" for="tel"><span class="form__label--contact-hide">Контактный</span> телефон*:</label>
                         <div class="form__input-before">
-                          <input class="form__input form__input--contact" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+                          <input class="form__input form__input--contact" type="tel" name="tel" id="tel" placeholder="Введите телефон" pattern="^[ 0-9]+$" required>
                           <span class="form__input--contact-tel"></span>
                         </div>
                       </div>
                       <div class="form__box-input form__box-input--email">
                         <label class="form__label form__label--contact form__label--email" for="email">Электронная почта*:</label>
                         <div class="form__input-before">
-                          <input class="form__input form__input--contact" type="email" name="email" id="email" placeholder="Введите e-mail">
+                          <input class="form__input form__input--contact" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                           <span class="form__input--contact-email"></span>
                         </div>
                       </div>
