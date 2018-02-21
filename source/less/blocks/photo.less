@@ -7,7 +7,7 @@
 .photo__border {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   outline: 1px solid black;
 }
 
@@ -87,11 +87,8 @@
     outline: 2px solid red;
   }
 
-  .photo__border {
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;*/
-    position: static;
+  .photo__border::after {
+    display: none;
   }
 
   .photo__container {
