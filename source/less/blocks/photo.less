@@ -6,6 +6,9 @@
 
 .photo__border {
   position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: 1px solid black;
 }
 
 .photo__container {
@@ -14,7 +17,8 @@
   width: 280px;
   margin: 0 auto;
   outline: 1px solid red;
-  padding-top: 20px;
+  background-color: @blue-light;
+
 }
 
 .photo__container::after {
@@ -27,41 +31,45 @@
   background-color: #e5e5e5;
 }
 
+.photo__image {
+
+}
+
 .photo__info {
   display: flex;
   flex-direction: column;
-  height: 112px;
 }
 
 .photo__info-name {
   display: flex;
   flex-direction: column;
   text-align: left;
-  outline: 1px solid red;
+  justify-content: center;
+  padding: 13px 0 8px 0;
 }
 
 .photo__title {
+  margin: 0;
   .font-text-big();
 }
 
 .photo__author {
-  margin-top: -15px;
+  margin: 0;
   .font-text-normal();
   text-transform: none;
 }
 
 .photo__btn {
-  margin-top: -7px;
+  margin: 0;
   text-align: left;
 }
 
 .photo__btn-like {
-  padding-left: 35px;
+  padding-left: 36px;
   .font-text-big();
   border: none;
   position: relative;
-  /*
-  background-color: transparent;*/
+  background-color: transparent;
 }
 
 .photo__btn-like::after {
@@ -70,7 +78,7 @@
   height: 25px;
   position: absolute;
   top: -3px;
-  left: 0;
+  left: -2px;
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -81,10 +89,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 648px;
-    margin: 0 auto;
-    padding: 0;
-    margin-top: -20px;
-    outline: 1px solid red;
+    outline: 2px solid red;
   }
 
   .photo__border {
@@ -96,8 +101,8 @@
 
   .photo__container {
     width: 324px;
-    height: 347px;
-    background-color: red;
+    height: 267px;
+    background-color: @blue-light;
   }
 
   .photo__container--big {
