@@ -28,6 +28,10 @@
   background-color: #e5e5e5;
 }
 
+.photo__image {
+  height: 280px;
+}
+
 .photo__info {
   display: flex;
   flex-direction: column;
@@ -101,16 +105,22 @@
     background-color: #ffffff;
   }
 
-  .photo__image {
-    display: block;
-  }
-
   .photo__info--right {
     background-color: #eaeaea;
   }
 
   .photo__container--big {
     width: 648px;
+  }
+
+  .photo__image {
+    display: block;
+    height: 267px;
+  }
+
+  .photo__image--big {
+    width: 648px;
+    height: 400px;
   }
 
   .photo__container::after {
@@ -193,7 +203,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 80px;
-    margin-top: -87px;
+    margin-top: -86px;
     background: rgba(0, 0, 0, 0.3);
   }
 

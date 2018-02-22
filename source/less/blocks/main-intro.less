@@ -64,6 +64,21 @@
   }
 }
 
+.main-intro__wrapper-photo::after {
+  content: "";
+  position: absolute;
+  width: 229px;
+  height: 39px;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/text-sedona.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1;
+}
+
 .main-intro__wrapper-photo::before {
   content: "";
   position: absolute;
@@ -131,10 +146,19 @@
     }
   }
 
-  .main-intro__logo-photo {
-    width: 461px;
-    height: 79px;
-    margin-top: 103px;
+  .main-intro__wrapper-photo::after {
+    content: "";
+    position: absolute;
+    width: 458px;
+    height: 78px;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/text-sedona.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
   }
 
   .main-intro__wrapper-photo::before {
