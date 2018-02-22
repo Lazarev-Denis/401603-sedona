@@ -8,7 +8,6 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 17px;
-  outline: 1px solid black;
 }
 
 .photo__container {
@@ -16,8 +15,7 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-  outline: 1px solid red;
-  background-color: @blue-light;
+  background-color: #f2f2f2;
 }
 
 .photo__container::after {
@@ -84,7 +82,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 648px;
-    outline: 2px solid red;
+  }
+
+  .photo__border {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-color: transparent;
   }
 
   .photo__border::after {
@@ -92,14 +95,17 @@
   }
 
   .photo__container {
+    display: flex;
     width: 324px;
-    height: 267px;
-    background-color: @blue-light;
+    background-color: #ffffff;
+  }
+
+  .photo__info--right {
+    background-color: #eaeaea;
   }
 
   .photo__container--big {
     width: 648px;
-    height: 480px;
   }
 
   .photo__container::after {
@@ -108,6 +114,8 @@
 
   .photo__info {
     flex-direction: row;
+    padding-bottom: 7px;
+    background-color: #f2f2f2;
   }
 
   .photo__info-name {
@@ -124,17 +132,21 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 20px;
-    padding-right: 30px;
+    padding-top: 5px;
+    padding-right: 23px;
     margin: 0;
     flex-grow: 1;
     padding-left: auto;
-    outline: 1px solid blue;
   }
 
-  .photo__btn-like {
-    padding-right: 0;
-    outline: 1px solid green;
+  .photo__btn--big {
+    padding-top: 5px;
+    padding-right: 14px;
+  }
+
+  .photo__btn--right {
+    padding-top: 5px;
+    padding-right: 30px;
   }
 
   .photo__btn-like::after {
@@ -144,33 +156,6 @@
     position: absolute;
     top: 0;
     left: 0;
-  }
-}
-
-/*.photo__info {
-    position: relative;
-    flex-direction: column;
-  }
-
-  .photo__image {
-    width: 324px;
-    padding: 0;
-  }
-
-  .photo__image--big {
-    width: 648px;
-    height: 400px;
-    padding: 0;
-  }
-
-  .photo__title {
-    padding-top: 2px;
-    padding-left: 20px;
-    .font-text-big();
-  }
-
-  .photo__author {
-    padding-left: 20px;
   }
 }
 
@@ -191,7 +176,6 @@
 
   .photo__image {
     width: 400px;
-    height: 268px;
   }
 
   .photo__image--big {
@@ -203,7 +187,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 80px;
-    margin-top: -84px;
+    margin-top: -87px;
     background: rgba(0, 0, 0, 0.3);
   }
 
@@ -212,13 +196,8 @@
     color: #ffffff;
   }
 
-  .photo__author {
-    padding-top: 2px;
-  }
-
   .photo__author,
   .photo__btn-like {
     color: #ffffff;
   }
 }
-*/
